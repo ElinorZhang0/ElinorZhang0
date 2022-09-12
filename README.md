@@ -40,23 +40,33 @@
 ## geojson_precincts.ipynb
 - Uses KeplerGl program to visualize geospatial data of precincts in CA-18.
 
-## precinct_formatting.ipynb
+## Google ads.ipynb
 - Formats ndjson geospatial data to get polygon shape coordinates.
 
-## 2022_primary_vote_project
- - This repository contains data, colab notebooks and final reports regarding 2022 Primary Election Results Evaluation.
+## Survey email.ipynb
+ - This repository colab notebooks to randomly draw 500 voters from San Mateo County (100 voters) & Santa Clara County (400 voters) for (email survey).
  
-## ANNA_ESHOO_Vote_Predicting_Model
-- This repository contains model predicting ANNA G. ESHOO ' s Vote in 2018 & 2020 Primary elections in Santa Clara, Santa Cruz and Santa Mateo. 
+## Regression on votes.ipynb
+- This repository contains spreadsheet and colab notebooks of regression on votes of Anna Eshoo to make prediction of primary votes for each candidate. Several adjustment are made during this prediction. 
+- Adjustments:
+1. non-serious candidate counts as 20% serious candidates
+2. votes between presidential and non-presidential year) (average of both year, subtract delta) 
+presidential vote average: 190968	
+non-presidential vote average: 151364		
+delta: 39604
+Average non serious candidate: 20,257
+Median	14,411
+Max	47,484 | Min	2,190			
+Average (exclude min/max)	19239.22222
 
-## block_group_levelvoter_model
-- This repository contains data, colab notebooks and final reports regarding block group level voter model
+## Primary Analysis-ethnicity (website data).ipynb
+- This repository contains colab notebooks regarding ethnicity Analysis for old and new CA-16 using the CA populaton stats web data
 
-## census_demo_data
-- This repository contains census demographic data of Santa Clara and Santa Mateo and data cleaning notebook
+## Primary & general election spending analysis.ipynb
+- This repository contains colab notebooks for Primary Electedbility analysis 2021-2022
 
-## eshoo_votes.ipynb
-- This repository contains the prediction for predicting Eshoo's votes as practice
+## Eshoo_votes.ipynb
+- This repository contains colab notebooks for the prediction of Eshoo's votes as practice
 <!---
 ElinorZhang0/ElinorZhang0 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
