@@ -1,50 +1,60 @@
 # Tanaka for Congress
 
-## CA18 Priority Survey
-- Generate new CA18 Priority Survey in Hubspot.
+## Mailing List_Santa_Clara.ipynb
+- This repository contains colab notebooks that maps the precinct of Santa Clara county voter data to the mailing list and find the corrlation between the voting result towards the mailing. 
 
-## Hubspot API
-- Python HubSpot API v3 SDK(Client) files and sample apps.
+## data_schema_type_check.ipynb
+- This repository contains colab notebooks that print the name and the type of each columns for csv file and spreasheet.
+- This is used for creating data schema 
 
-## Mailchimp
-- Mailchimp Hubspot Synchronization - Upload mailchimp campaign results to Hubspot. Each mailchimp campaign corresponds to one contact property in Hubspot.
+## NTF.ipynb
+- This repository contains a folder that include colab notebooks that uses OpenCVs to auto-generate the NTF images from 10000+ differenct combinations, and spreadsheet for combinations and images after run the code. 
 
-## census_data_collection
-- download_pct_census_data - Downloads csv files of the census data for each precinct for the desired tables and years. The downloaded files are placed into folders with their precinct names and renamed according to the table and year they are from.
-- merge_pct_csvs - Merges each precinct's CSV files for each table and year. A column is added to the merged CSV with the precinct numbers.
-- precinct_cbg_mapping - Maps precincts to census block groups and writes the mappings to a file in Newline delimited JSON.
-- xml_to_csv - Converts a XML file to a CSV file given the column names in the XML file that should be in the CSV file.
+## Primary analysis--ethnicity | party distribution.ipynb
+- This repository contain colab notebooks that uses voter data of San Mateo County and Santa Clara County to do the party and ethnicity analysis. Comparsion chart were drawn to see the ethnicity and party shift after the re-district
 
-## city_public_email
-- Downloads emails from the public to city councils in Congressional District 16 and logs the email in HubSpot. The emails are scraped from the cities' websites and new contacts are created as necessary.
+## Google Appsheet.ipynb
+- This repository contain colab notebooks that import the voter data to Appsheet by zipcode/city/block for canvassing 
 
-## hs_automate_pipeline
-- Uses the HubSpot API to automatically move deals to the correct deal stage in the deal pipeline. New deals and contacts will be created as necessary.
+## Get contact sign up for a form.ipynb
+### hubspot-api-python
 
-## hubspot_dedup
-- Takes a CSV of duplicated contacts and groups them together to associate them with a single Contact ID.
+Python [HubSpot API](https://developers.hubspot.com/docs/api/overview) v3 SDK(Client) files and sample apps
 
-## lastname_origin
-- Predicts origin from last name.
+### Documentation
 
-## model
-- facebook-ad-library-scraper - A Python scraper for the Facebook Ad Library, using the official Facebook Ad Library API. This tool will ONLY work for users who have been approved for access to the API via Facebook. This scraper also performs cleaning to make the data easier to analyze and work around very strange data encoding decisions (e.g. the script will impute 0 for missing demographics and regions).
-- general_votes
-- mapping
-- palo_alto_model
-- webscraping
+See the [API docs](https://developers.hubspot.com/docs/api/overview).
 
-## predict_race_and_gender
-- Updates the property "predicted_gender" for every contact in HubSpot based on their first name and updates the property "predicted_race" for every contact in HubSpot based on their last name.
+### Installation
 
-## geojson_precincts.ipynb
-- Uses KeplerGl program to visualize geospatial data of precincts in CA-18.
+To use the package, run:
 
-## Google ads.ipynb
-- Formats ndjson geospatial data to get polygon shape coordinates.
+```bash
+pip install --upgrade hubspot-api-client
+```
+
+### Requirements
+
+[Python 3.5+](https://docs.python.org/3/) and [pip](https://pypi.org/project/pip/) installed.
+
+- This repository contain colab notebooks firstly get all the contact in Hubspot, then select the contact who signed up for at least one form (excluding intern/volunteer form). Then either move or create a deal for this contact and move to the sign-up-for-form pipeline
+
+## import AppSheet data.ipynb
+- This repository contain colab notebooks that uses HubSpot API to input the Appsheet data to Hubspot 
+- The detail and requirement for how to use HubSpot API are shown above
+
+## TwoGrains data.ipynb
+- This repository contain colab notebooks that uses HubSpot API to input the TwoGrain texting campaign data to Hubspot 
+- The detail and requirement for how to use HubSpot API are shown above
+
+
+
+## Google Ads Analysis 
+- ads analysis Jun 3rd.ipynb & Google ads.ipynb
+- This repository contains two colab notebooks for google ads analysis by clicks,Conversion rate,cost conversion and Gender / Age / Income / parent status
 
 ## Survey email.ipynb
- - This repository colab notebooks to randomly draw 500 voters from San Mateo County (100 voters) & Santa Clara County (400 voters) for (email survey).
+ - This repository contains colab notebooks to randomly draw 500 voters from San Mateo County (100 voters) & Santa Clara County (400 voters) for (email survey).
  
 ## Regression on votes.ipynb
 - This repository contains spreadsheet and colab notebooks of regression on votes of Anna Eshoo to make prediction of primary votes for each candidate. Several adjustment are made during this prediction. 
